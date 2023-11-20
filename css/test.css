@@ -1,0 +1,11 @@
+
+.box {
+    display: inline;
+    box-sizing: border-box;
+    background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+  padding-left: 10px;
+  border: 5px dotted red;
+  margin: 0 auto;
+}

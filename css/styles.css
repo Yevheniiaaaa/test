@@ -1,0 +1,268 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v20-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-primary-dark: #31261a;
+  --color-primary-light: #faf4ea;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+}
+
+/* Base */
+* {
+  box-sizing: border-box;
+}
+body {
+  color: var(--color-primary-dark);
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0%;
+}
+address {
+  font-style: normal;
+}
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.section {
+  padding: 48px 0;
+}
+.visualy-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+.button {
+  background-color: var(--color-brand-light);
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid var(--color-brand-light);
+  color: var(--color-primary-light);
+  cursor: pointer;
+}
+.button:hover {
+  background-color: transparent;
+  color: var(--color-brand-dark);
+}
+
+/* Link */
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+.link:hover {
+  color: var(--color-brand-light);
+}
+/* Header */
+.header {
+  background-color: grey;
+}
+.flex-header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Hero section */
+.hero-section {
+  padding: 272px 0;
+}
+.hero-title {
+  color: var(--color-primary-light);
+  text-align: center;
+  font-size: 128px;
+  font-weight: 900;
+  margin-bottom: 0%;
+}
+
+.hero-title .accent {
+  color: var(--color-brand-light);
+}
+/* Section title */
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3%;
+  color: var(--color-primary-dark);
+}
+.section-title-center {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3%;
+  color: var(--color-primary-dark);
+  text-align: center;
+}
+/* Advantages section */
+.advantages-section {
+  background-color: var(--color-brand-light);
+  padding: 16px 0;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.advantages-item {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+/* Traditions section */
+.traditions-section {
+    margin-bottom: 42px;
+    padding-top: 96px;
+  }
+.flex-traditions-container {
+  display: flex;
+  padding: 96px;
+  justify-content: space-between;
+  gap: 40px;
+}
+.flex-traditions-content {
+  
+  max-width: 710px;
+}
+.traditions-text.limit{
+  max-width: 340px;
+}
+
+.traditions-title.section-title{
+    line-height: 1.3;
+}
+
+.traditions-text .brand {
+  color: var(--color-brand-light);
+}
+.traditions-text .brand-uppercase {
+  color: var(--color-brand-light);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+/* Chefs section */
+
+.section-title .accent {
+  color: var(--color-brand-dark);
+}
+.chefs-title {
+  margin-bottom: 80px;
+}
+.chef-title {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 600;
+}
+/* Formats section */
+
+.formats-title {
+  color: var(--color-primary-light);
+  font-size: 24px;
+  font-weight: 600;
+}
+.format-title {
+  margin-bottom: 80px;
+}
+.formats-text {
+
+  color: var(--color-primary-light);
+  font-size: 14px;
+  font-weight: 300;
+}
+.format-card{
+    
+    border: 1px solid lightgreen;
+    border-radius: 16px;
+    padding: 24px;
+    
+}
+.formats-list{
+    display: flex;
+    gap: 20px;
+    
+}
+/* Address section */
+.address-title {
+  margin-bottom: 12 px;
+}
+.address-link {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.address-link:hover {
+  color: var(--color-primary-light);
+  text-decoration: none;
+}
+.address-copyright {
+  color: #a18268;
+  font-size: 14px;
+  font-weight: 400;
+}
